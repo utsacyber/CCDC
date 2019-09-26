@@ -2,7 +2,7 @@ Linux Network Troubleshooting for Debian/Ubuntu:
 
 Check ip address:
 
-	`ifconfig` or `ip a`
+	``ifconfig`` or ``ip a``
 
 	- "lo" is loopback.
 
@@ -16,13 +16,13 @@ Check ip address:
 
 If no IP address:
 
-	`service networking restart` or `systemctl restart networking`
+	``service networking restart`` or ``systemctl restart networking``
 
 	- Manually bring down an interface and bring it back up
 
-	`ifconfig <interface> down`
+	``ifconfig <interface> down``
 
-	`ifconfig <interface> up`
+	``ifconfig <interface> up``
 
 Configure DHCP:
 
