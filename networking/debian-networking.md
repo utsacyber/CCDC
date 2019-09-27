@@ -1,28 +1,28 @@
 Linux Network Troubleshooting for Debian/Ubuntu:
 
-Check ip address:
+Check ip address: ``ifconfig`` or ``ip a``
 
-	``ifconfig`` or ``ip a``
+**You will need this IP address when you move behind the firewall.**
 
-	- "lo" is loopback.
+- "lo" is loopback.
 
-	- "eth" or "ens" is the interface for your network.
+- "eth" or "ens" is the interface for your network.
 
-	- Log IP address of eth/ens.
-
-	**You will need this IP address when you move behind the firewall.**
+- Write down IP address of eth/ens.
 
 
 
-If no IP address:
+If no IP address: ``service networking restart`` or ``systemctl restart network``
 
-	``service networking restart`` or ``systemctl restart networking``
+Manually bring down an interface and bring it back up:
 
-	- Manually bring down an interface and bring it back up
+``ifconfig <interface> down``
 
-	``ifconfig <interface> down``
+``ifconfig <interface> up``
 
-	``ifconfig <interface> up``
+
+Find Interfaces in file system: ``cat /etc/network/interfaces``
+
 
 Configure DHCP:
 
